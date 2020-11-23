@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DemoSite(HTML/CSS)
+  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="back-top">
+    <i class="fas fa-angle-double-up fa-3x py-2 px-3 rounded-circle" style="background-color:rgba(39, 15, 37, 0.3);"></i>
+  </div>
+</div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(39, 15, 37, 0.3);">
+      <a class="navbar-brand" href="index.html">Top</a>
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mr-3">
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="fixedpage1.html">Fixedpage1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="bloglist.html">Bloglist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="fixedpage2.html">Fixedpage2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+      <div class="sub-keyvisual_body">
+        <div class="keyvisual_title">Contact</div>
+      </div>
+      <div  class="sub-keyvisual_img">
+        <img class="img-fluid" src="img/22.2.jpg" alt="">
+      </div>
+
+    <div class="col p-4 contactbox">
+      <div class="contactbox_text">
+        fromはプラグインにて挿入
+      </div>
+    </div>
+
+
+
+
+
+  <!-- footerfooterfooterfooterfooterfooterfooterfooterfooterfooterfooter -->
+
+  <footer class="company mt-5">
+    <div class="company_name my-3">株式会社 ○○○○○○</div>
+    <ul class="company_access">
+      <li class="company_list">
+        <i class="fas fa-tenge d-block mb-2 mr-2">xxx-xxxx</i>
+        <p>○○県○○市○○○○xxx-xx</p>
+      </li>
+      <li class="company_list">
+        <i class="fas fa-phone d-block mb-2 mr-2">xxx-xxxx-xxxx</i>
+        <p>営業時間/9:00-22:00　定休日/火曜日</p>
+      </li>
+      <ul>
+        <div class="company_sns mt-3">
+          <a href=""><i class="fab fa-twitter fa-2x mr-2"></i></a>
+          <a href=""><i class="fab fa-facebook-f fa-2x mr-2"></i></a>
+          <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <div class="footer_bottom py-2 mt-5">
+          Copyright © Noriko sato,2020 All Right Reserved.
+        </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      (function($){
+        $(function(){
+          $(".back-top").hide();
+          $(window).scroll(function() {
+            if($(this).scrollTop() >60) {
+              $(".back-top").fadeIn("slow");
+            } else {
+              $(".back-top").fadeOut("slow");
+            }
+          });
+          $(".back-top").click(function(){
+            $("html, body").animate({
+              "scrollTop":0
+            },500);
+            return false;
+          });
+        });
+      })(jQuery);
+    </script>
+
+
+</body>
+
+</html>
